@@ -21,6 +21,8 @@
                 {{ total_items }} item{{ total_items|pluralize }},
                 ${{ cart.get_total_price }}
             </a>
+            {% for i in cart %}
+            {% endfor %}
             {% elif not order %}
             Your cart is empty.
             {% endif %}
