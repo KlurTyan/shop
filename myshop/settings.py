@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "shop.apps.ShopConfig",
     "cart.apps.CartConfig",
     "orders.apps.OrdersConfig",
+    "payment.apps.PaymentConfig",
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,11 @@ MEDIA_ROOT = BASE_DIR / "media"
 CART_SESSION_ID = "cart"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Настроечные параметры Stripe
+STRIPE_PUBLISHABLE_KEY = "pk_test_51QONRVKnoxgoMtXQpmQxVkka3AvRjxs8B3KYZDIYfUBUrYGbHcxtjIp55QFVCvd9BBca0Awe78jaQDZviEszbcdU00KurYnv1X"  # Публикуемый ключ
+STRIPE_SECRET_KEY = "sk_test_51QONRVKnoxgoMtXQ9hUNLNTJPu9BpnejoPnFnBp1vt8qRd6rBnIOgJl8yKkviQGuBRDJIXZ23hbhTRyoMTGuif7700hgZyp725"  # Секретный ключ
+STRIPE_API_VERSION = "2022-08-01"
+STRIPE_WEBHOOK_SECRET = (
+    "whsec_8c7685a4b5671be4d51291d51659f9e2292cceab5a8cb33e62a65aae7ca03830"
+)
