@@ -142,3 +142,9 @@ EMAIL_HOST_PASSWORD = "reds wzrr owbc rjuq"
 
 # rk_test_51QONRVKnoxgoMtXQJ5BGi8I2Lj9fH9KO5cRxZZaADiDrrpxUvrLLldAY4n7UlcgP2PNGtrVYLsXTjlN68QkdVKmI00Z8kP93HX
 # worthy-nobly-succes-charm
+
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
+REDIS_DB = 1
+
+# docker run -it --rm --name redis -p 6379:6379 redis
