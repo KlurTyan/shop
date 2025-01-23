@@ -132,5 +132,12 @@ STRIPE_WEBHOOK_SECRET = (
 
 STATIC_ROOT = BASE_DIR / "static"
 
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "rusgaymtuan@gmail.com"
+EMAIL_HOST_PASSWORD = "reds wzrr owbc rjuq"
+
 # rk_test_51QONRVKnoxgoMtXQJ5BGi8I2Lj9fH9KO5cRxZZaADiDrrpxUvrLLldAY4n7UlcgP2PNGtrVYLsXTjlN68QkdVKmI00Z8kP93HX
 # worthy-nobly-succes-charm
