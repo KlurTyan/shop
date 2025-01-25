@@ -4,3 +4,5 @@ reids - docker run -it --rm --name redis -p 6379:6379 redis
 flower - celery -A myshop flower
 celery - celery -A myshop worker -l info
 stripe - stripe listen --forward-to localhost:8000/payment/webhook/
+django-admin makemessages --all --ignore='venv*/*'
+django-admin compilemessages --ignore='venv*/*'
